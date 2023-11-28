@@ -1,0 +1,88 @@
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --dark-purple: #3c122c;
+  --medium-purple: #762ba3;
+  --light-purple: #ae40f0;
+  --yellow: #ffc800;
+  --pink: #fc5185;
+  --light-pink: #ffeffe;
+  --green: #00b090;
+  --background-gray: #eee;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sticky-social-container {
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  top: 42%;
+  width: 200px;
+  z-index: 99;
+
+  left: -155px;
+}
+
+.sticky-social a {
+  list-style: none;
+  text-decoration: none;
+  background-color: none;
+  height: 46px;
+  padding: 0;
+  margin: 0 0 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  background-color: var(--light-pink);
+  border-radius: 25px;
+
+  transition: all 0.25s ease-in-out;
+}
+
+.sticky-social a:hover {
+  margin-right: -110px;
+  background-color: var(--pink);
+}
+
+.sticky-social a i {
+  margin: 0 10px;
+  font-size: 28px;
+  color: var(--pink);
+}
+
+.sticky-social a:hover i {
+  color: var(--light-pink);
+}
+
+.sticky-social a p {
+  font-size: 1.1rem;
+  color: var(--dark-purple);
+  font-weight: 900;
+}
+
+@media only screen and (max-width: 1024px) {
+  .sticky-social-container {
+    left: -160px;
+  }
+
+  .sticky-social a {
+    height: 36px;
+  }
+
+  .sticky-social a:hover {
+    margin-right: -100px;
+  }
+
+  .sticky-social a i {
+    font-size: 22px;
+  }
+}
